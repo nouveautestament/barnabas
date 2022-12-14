@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nouveau Testament">
+		<meta name="keywords" content="Nouveau Testament">
+	
+		<title>BARNABAS</title>
+
+		<script src='panzoom.min.js'></script>
+
+		<style>
+			html {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+			}
+			
+			
+			body {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				font-family:		sans-serif;
+			}
+			
+			a {
+				
+				color:				black;
+				text-decoration:	none;
+			}
+
+			a:hover {
+				
+				text-decoration:	underline;
+			}
+			
+			table {
+				
+				margin-top:			3px;
+				font-size:			13px;
+			}
+
+			table td {
+				
+				padding-right:		15px;
+			}
+			
+			table tr:nth-child(even) {
+				
+				background: #eee;
+			}
+			
+			table tr:hover {
+				
+				background: #f3efe3; 
+				
+			}
+			
+			
+			#left {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				float:left;
+				overflow: auto;
+			
+			}
+			
+			
+			#right {
+				
+				margin:0;
+				padding:0;
+				
+				width:0%;
+				height:100%;
+				
+				float:left;
+				overflow: hidden;
+			}
+
+			
+
+			#inleft {
+				
+				padding:5px;
+			}
+
+			
+			img {
+				
+				border: 2px dashed rgba(28,110,164,0.32);
+				border-radius: 14px;
+			}
+			
+			.prigent  {
+			
+				cursor:	pointer;
+				color:	blue;
+			}
+			
+			#banniere {
+			
+				margin:0px;
+				padding:0px;
+				
+				color:white;
+				background-color:#172028;
+				
+				
+				
+				/*white-space:nowrap;*/
+				/*display: flex;*/
+			}
+		
+			.blocban {
+				
+				margin:0px;
+				padding:10px;
+				
+				display:inline-block;
+				
+				font-size:0.9em;
+				color:white;
+				text-decoration:none;
+			}
+			
+			
+			.blocban:hover {
+				
+				text-decoration:none;
+				background-color:#3f4346;
+			}
+
+			rtxt {
+				color: green;
+			}
+			
+			wits {
+				color: red;
+			}
+			
+			table b {
+				display: block;
+				color: orange;
+				margin-bottom: 3px;
+			}
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.el {
+				font-size:17px;
+				font-family:Serif;
+				display:block;
+			}
+
+			.fr {
+				font-size:16px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+
+			.lemme {
+				font-size:14px;
+				color: #444444;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#4b86ff;
+			}
+			
+			.trs {
+				line-height:1.3em;
+				font-size:14px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border: 1px solid #F7E98D;
+				box-sizing:border-box;
+				padding: 15px 15px 30px;
+				width:100%;
+				height:100%;
+				display: block;
+			}
+			
+			#show {
+				background-color: white;
+				position: fixed;
+				width: 100%;
+				height: 90%;
+				top: 0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			
+			intro = id.split('_')
+			intro = 'BARNABAS:'+intro[2]+':'+intro[3];
+			
+			alltrs += intro+' '+linetrs+"\n"
+			
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+			
+		}
+
+		
+		</script>
+		
+	</head>
+
+<body>
+
+<div style="display:none;" id="show"><div onclick="save()" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div><textarea class="trs" id="textarea_trs"></textarea></div>
+
+<div id="left">
+<div id="banniere"><!--
+	--><span class="blocban">Ȼ</span><!--
+	--><a class="blocban" href="../../index.html">INDEX</a>
+</div>
+<div id="inleft">
+
+<p><a href="28-1.html">BARNABAS</a>&ensp;
+
+
+<a href="28-1.html">CH1</a>&ensp;<a href="28-2.html">CH2</a>&ensp;<a href="28-3.html">CH3</a>&ensp;<a href="28-4.html">CH4</a>&ensp;<a href="28-5.html">CH5</a>&ensp;<a href="28-6.html">CH6</a>&ensp;<a href="28-7.html">CH7</a>&ensp;<a href="28-8.html">CH8</a>&ensp;<a href="28-9.html">CH9</a>&ensp;<a href="28-10.html">CH10</a>&ensp;<a href="28-11.html">CH11</a>&ensp;<a href="28-12.html">CH12</a>&ensp;<a href="28-13.html">CH13</a>&ensp;<a href="28-14.html">CH14</a>&ensp;<a href="28-15.html">CH15</a>&ensp;<a href="28-16.html">CH16</a>&ensp;<a href="28-17.html">CH17</a>&ensp;<a href="28-18.html"><b>[ CH18 ]</b></a>&ensp;<a href="28-19.html">CH19</a>&ensp;<a href="28-20.html">CH20</a>&ensp;<a href="28-21.html">CH21</a>&ensp;
+<br><br><a href="#V1">V1</a>&ensp;<a href="#V2">V2</a>&ensp;
+<br><br><div id="V1"></div><a href="#banniere"><b>BARNABAS 18 1</b></a> 
+<button onclick="montrer('18_1')">montrer</button>
+<button onclick="cacher('18_1')">cacher</button>
+<span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span>
+<table cellspacing="0"><tbody>
+
+<tr><td class="td1">BARNABAS_ND</td><td class="td2">80</td><td class="td3"><div class="int"><span class="el">Μεταβῶμεν</span><span class="fr">Que nous ayons dépassé</span><span class="info">verbe</span><span class="subinfo">aoriste,actif,subjonctif,1e,pluriel</span><span class="lemme"><a target="_blank" href="../../lemme/μεταβαίνω.html">μεταβαίνω</a></span></div><div class="int"><span class="el">δὲ</span><span class="fr">cependant</span><span class="info">postpositif</span><span class="subinfo">conjonction</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">καὶ</span><span class="fr">et</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">ἐπὶ</span><span class="fr">sur</span><span class="info">préposition</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/ἐπί.html">ἐπί</a></span></div><div class="int"><span class="el">ἑτέραν</span><span class="fr">autre-différente</span><span class="info">adjectif</span><span class="subinfo">accusatif,singulier,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/ἕτερος.html">ἕτερος</a></span></div><div class="int"><span class="el">γνῶσιν</span><span class="fr">que aient connu</span><span class="info">verbe</span><span class="subinfo">2aoriste,actif,subjonctif,3e,pluriel</span><span class="lemme"><a target="_blank" href="../../lemme/γινώσκω.html">γινώσκω</a></span></div><div class="int"><span class="el">καὶ</span><span class="fr">et</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">διδαχήν.</span><span class="fr">enseignement.</span><span class="info">nom</span><span class="subinfo">accusatif,singulier,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/διδαχή.html">διδαχή</a></span></div><div class="int"><span class="el">Ὁδοὶ</span><span class="fr">Chemins</span><span class="info">nom</span><span class="subinfo">nominatif,pluriel,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/ὁδός.html">ὁδός</a></span></div><div class="int"><span class="el">δύο</span><span class="fr">de deux</span><span class="info">adjectif</span><span class="subinfo">nominatif/génitif/accusatif,singulier,mfn</span><span class="lemme"><a target="_blank" href="../../lemme/δύο.html">δύο</a></span></div><div class="int"><span class="el">εἰσὶν</span><span class="fr">sont</span><span class="info">verbe</span><span class="subinfo">présent,actif,indicatif,3e,pluriel</span><span class="lemme"><a target="_blank" href="../../lemme/εἶναι.html">εἶναι</a></span></div><div class="int"><span class="el">διδαχῆς</span><span class="fr">de enseignement</span><span class="info">nom</span><span class="subinfo">génitif,singulier,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/διδαχή.html">διδαχή</a></span></div><div class="int"><span class="el">καὶ</span><span class="fr">et</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">ἐξουσίας,</span><span class="fr">autorités,</span><span class="info">nom</span><span class="subinfo">accusatif,féminin,pluriel</span><span class="lemme"><a target="_blank" href="../../lemme/ἐξουσία.html">ἐξουσία</a></span></div><div class="int"><span class="el">ἥ</span><span class="fr">laquelle</span><span class="info">pronom</span><span class="subinfo">relatif,nominatif,singulier,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/ὅς.html">ὅς</a></span></div><div class="int"><span class="el">τε</span><span class="fr">en outre</span><span class="info">particule/conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/τέ.html">τέ</a></span></div><div class="int"><span class="el">τοῦ</span><span class="fr">de le</span><span class="info">article</span><span class="subinfo">défini,génitif,singulier,masculin/neutre</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">φωτὸς</span><span class="fr">de lumière</span><span class="info">nom</span><span class="subinfo">génitif,singulier,neutre</span><span class="lemme"><a target="_blank" href="../../lemme/φῶς.html">φῶς</a></span></div><div class="int"><span class="el">καὶ</span><span class="fr">et</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">ἡ</span><span class="fr">la</span><span class="info">article</span><span class="subinfo">défini,nominatif,singulier,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">τοῦ</span><span class="fr">de le</span><span class="info">article</span><span class="subinfo">défini,génitif,singulier,masculin/neutre</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">σκότους.</span><span class="fr">de ténèbre.</span><span class="info">nom</span><span class="subinfo">génitif,singulier,neutre</span><span class="lemme"><a target="_blank" href="../../lemme/σκότος.html">σκότος</a></span></div><div class="int"><span class="el">διαφορὰ</span><span class="fr">différence</span><span class="info">nom</span><span class="subinfo">nominatif,singulier,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/διαφορά.html">διαφορά</a></span></div><div class="int"><span class="el">δὲ</span><span class="fr">cependant</span><span class="info">postpositif</span><span class="subinfo">conjonction</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">πολλὴ</span><span class="fr">nombreuse</span><span class="info">adjectif</span><span class="subinfo">nominatif,singulier,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/πολύς.html">πολύς</a></span></div><div class="int"><span class="el">τῶν</span><span class="fr">de les</span><span class="info">article</span><span class="subinfo">défini,génitif,pluriel,mfn</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">δύο</span><span class="fr">de deux</span><span class="info">adjectif</span><span class="subinfo">nominatif/génitif/accusatif,singulier,mfn</span><span class="lemme"><a target="_blank" href="../../lemme/δύο.html">δύο</a></span></div><div class="int"><span class="el">ὁδῶν.</span><span class="fr">de chemins.</span><span class="info">nom</span><span class="subinfo">génitif,pluriel,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/ὁδός.html">ὁδός</a></span></div><div class="int"><span class="el">ἐφ’</span><span class="fr">sur</span><span class="info">préposition</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/ἐπί.html">ἐπί</a></span></div><div class="int"><span class="el">ἧς</span><span class="fr">de laquelle</span><span class="info">pronom</span><span class="subinfo">relatif,génitif,singulier,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/ὅς.html">ὅς</a></span></div><div class="int"><span class="el">μὲν</span><span class="fr">certes</span><span class="info">particule</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/μέν.html">μέν</a></span></div><div class="int"><span class="el">γάρ</span><span class="fr">car</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/γάρ.html">γάρ</a></span></div><div class="int"><span class="el">εἰσιν</span><span class="fr">sont</span><span class="info">verbe</span><span class="subinfo">présent,actif,indicatif,3e,pluriel</span><span class="lemme"><a target="_blank" href="../../lemme/εἶναι.html">εἶναι</a></span></div><div class="int"><span class="el">τεταγμένοι</span><span class="fr">se ayants ordonnancés</span><span class="info">verbe</span><span class="subinfo">participe,parfait,moyen/passif,nominatif,pluriel,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/τάσσω.html">τάσσω</a></span></div><div class="int"><span class="el">φωταγωγοὶ</span><span class="fr">conduisants lumière</span><span class="info">adjectif</span><span class="subinfo">nominatif,pluriel,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/φωταγωγός.html">φωταγωγός</a></span></div><div class="int"><span class="el">ἄγγελοι</span><span class="fr">anges</span><span class="info">nom</span><span class="subinfo">nominatif,pluriel,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/ἄγγελος.html">ἄγγελος</a></span></div><div class="int"><span class="el">τοῦ</span><span class="fr">de le</span><span class="info">article</span><span class="subinfo">défini,génitif,singulier,masculin/neutre</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">θεοῦ,</span><span class="fr">de Dieu,</span><span class="info">nom</span><span class="subinfo">génitif,singulier,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/θεός.html">θεός</a></span></div><div class="int"><span class="el">ἐφ’</span><span class="fr">sur</span><span class="info">préposition</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/ἐπί.html">ἐπί</a></span></div><div class="int"><span class="el">ἧς</span><span class="fr">de laquelle</span><span class="info">pronom</span><span class="subinfo">relatif,génitif,singulier,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/ὅς.html">ὅς</a></span></div><div class="int"><span class="el">δὲ</span><span class="fr">cependant</span><span class="info">postpositif</span><span class="subinfo">conjonction</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">ἄγγελοι</span><span class="fr">anges</span><span class="info">nom</span><span class="subinfo">nominatif,pluriel,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/ἄγγελος.html">ἄγγελος</a></span></div><div class="int"><span class="el">τοῦ</span><span class="fr">de le</span><span class="info">article</span><span class="subinfo">défini,génitif,singulier,masculin/neutre</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">σατανᾶ.</span><span class="fr">Satanas.</span><span class="info">nom</span><span class="subinfo">accusatif,singulier,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/Σατανᾶς.html">Σατανᾶς</a></span></div></td></tr><tr><td class="td1" nowrap><button onclick="addtrs('trs_28_18_1');this.style.background='#00eb00'">NOUVELLE_DISPOSITION</button></td><td class="td2">80</td><td class="td3"><textarea id="trs_28_18_1" class="trs" style="">Que nous ayons dépassé cependant et sur autre-différente que aient connu et enseignement. Chemins de deux sont de enseignement et autorités, laquelle en outre de le de lumière et la de le de ténèbre. différence cependant nombreuse de les de deux de chemins. sur de laquelle certes car sont se ayants ordonnancés conduisants lumière anges de le de Dieu, sur de laquelle cependant anges de le Satanas.</textarea></td></tr>
+<tr id="bgd18_1" style="display: visible;"><td class="td1">BARNABAS_GREEKDOC</td><td class="td2">80</td><td class="td3"><div class="int"><span class="el">Μεταβῶμεν</span><span class="fr">to-pass-over</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/meta.html#metabwmen">metabwmen</a></span></div><div class="int"><span class="el">δὲ</span><span class="fr">but</span><span class="subinfo">-and,-however</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/de.html#de">de</a></span></div><div class="int"><span class="el">καὶ</span><span class="fr">and</span><span class="subinfo">-also,-even,-then,-next</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/kai.html#kai">kai</a></span></div><div class="int"><span class="el">ἐπὶ</span><span class="fr">on</span><span class="subinfo">-upon,-against</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/epi.html#epi">epi</a></span></div><div class="int"><span class="el">ἑτέραν</span><span class="fr">next</span><span class="subinfo">-other</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/et.html#eteran">eteran</a></span></div><div class="int"><span class="el">γνῶσιν</span><span class="fr">Noun:-knowledge</span><span class="subinfo">-Verb:-to-know</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/gn.html#gnw~sin">gnw~sin</a></span></div><div class="int"><span class="el">καὶ</span><span class="fr">and</span><span class="subinfo">-also,-even,-then,-next</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/kai.html#kai">kai</a></span></div><div class="int"><span class="el">διδαχήν.</span><span class="fr">instruction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/did.html#didachn">didachn</a></span></div><div class="int"><span class="el">ὁδοὶ</span><span class="fr">road</span><span class="subinfo">-way</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/od.html#odoi">odoi</a></span></div><div class="int"><span class="el">δύο</span><span class="fr">two</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/du.html#duo">duo</a></span></div><div class="int"><span class="el">εἰσὶν</span><span class="fr">to-be:-PrActInd3P</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/eis.html#eisin">eisin</a></span></div><div class="int"><span class="el">διδαχῆς</span><span class="fr">teaching</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/did.html#didachs">didachs</a></span></div><div class="int"><span class="el">καὶ</span><span class="fr">and</span><span class="subinfo">-also,-even,-then,-next</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/kai.html#kai">kai</a></span></div><div class="int"><span class="el">ἐξουσίας,</span><span class="fr">authority</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/exo.html#exousias">exousias</a></span></div><div class="int"><span class="el">ἥ</span><span class="fr">who</span><span class="subinfo">-which,-that;-+enclitic,the</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/h.html#h('">h('</a></span></div><div class="int"><span class="el">τε</span><span class="fr">and</span><span class="subinfo">-both,-if</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/te.html#te">te</a></span></div><div class="int"><span class="el">τοῦ</span><span class="fr">the</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/to.html#tou">tou</a></span></div><div class="int"><span class="el">φωτὸς</span><span class="fr">light</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/fw.html#fwtos">fwtos</a></span></div><div class="int"><span class="el">καὶ</span><span class="fr">and</span><span class="subinfo">-also,-even,-then,-next</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/kai.html#kai">kai</a></span></div><div class="int"><span class="el">ἡ</span><span class="fr">the</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/h.html#h(">h(</a></span></div><div class="int"><span class="el">τοῦ</span><span class="fr">the</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/to.html#tou">tou</a></span></div><div class="int"><span class="el">σκότους.</span><span class="fr">darkness</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/sk.html#skotous">skotous</a></span></div><div class="int"><span class="el">διαφορὰ</span><span class="fr">difference</span><span class="subinfo">-distinction</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/diaf.html#diafora'">diafora'</a></span></div><div class="int"><span class="el">δὲ</span><span class="fr">but</span><span class="subinfo">-and,-however</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/de.html#de">de</a></span></div><div class="int"><span class="el">πολλὴ</span><span class="fr">many</span><span class="subinfo">-much</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/pol.html#pollh">pollh</a></span></div><div class="int"><span class="el">τῶν</span><span class="fr">the</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/tw.html#twn">twn</a></span></div><div class="int"><span class="el">δύο</span><span class="fr">two</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/du.html#duo">duo</a></span></div><div class="int"><span class="el">ὁδῶν.</span><span class="fr">road</span><span class="subinfo">-way</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/od.html#odwn">odwn</a></span></div><div class="int"><span class="el">ἐφ᾿</span><span class="fr">on</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/ef.html#ef">ef</a></span></div><div class="int"><span class="el">ἧς</span><span class="fr">who</span><span class="subinfo">-which,-that</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/hs.html#h(~s">h(~s</a></span></div><div class="int"><span class="el">μὲν</span><span class="fr">indeed</span><span class="subinfo">-on-other-hand</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/men.html#men">men</a></span></div><div class="int"><span class="el">γάρ</span><span class="fr">for</span><span class="subinfo">-because</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/ga.html#gar">gar</a></span></div><div class="int"><span class="el">εἰσιν</span><span class="fr">are</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/eis.html#eisin">eisin</a></span></div><div class="int"><span class="el">τεταγμένοι</span><span class="fr">to-appoint</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/tet.html#tetagmenoi">tetagmenoi</a></span></div><div class="int"><span class="el">φωταγωγοὶ</span><span class="fr">light-bringing</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/fw.html#fwtagwgoi">fwtagwgoi</a></span></div><div class="int"><span class="el">ἄγγελοι</span><span class="fr">angel</span><span class="subinfo">-messenger</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/agg.html#aggeloi">aggeloi</a></span></div><div class="int"><span class="el">τοῦ</span><span class="fr">the</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/to.html#tou">tou</a></span></div><div class="int"><span class="el">θεοῦ,</span><span class="fr">God</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/qe.html#qeou">qeou</a></span></div><div class="int"><span class="el">ἐφ᾿</span><span class="fr">on</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/ef.html#ef">ef</a></span></div><div class="int"><span class="el">ἧς</span><span class="fr">who</span><span class="subinfo">-which,-that</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/hs.html#h(~s">h(~s</a></span></div><div class="int"><span class="el">δὲ</span><span class="fr">but</span><span class="subinfo">-and,-however</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/de.html#de">de</a></span></div><div class="int"><span class="el">ἄγγελοι</span><span class="fr">angel</span><span class="subinfo">-messenger</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/agg.html#aggeloi">aggeloi</a></span></div><div class="int"><span class="el">τοῦ</span><span class="fr">the</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/to.html#tou">tou</a></span></div><div class="int"><span class="el">σατανᾶ.</span><span class="fr">adversary</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/sa.html#satana">satana</a></span></div></td></tr>
+<tr id="bp18_1" style="display: none;"><td class="td1">BARNABAS_PERSEUS</td><td class="td2">80</td><td class="td3"><div class="int"><span class="el">Μεταβῶμεν</span><span class="info">verbe</span><span class="subinfo">1e,pluriel,aoriste,subjonctif,actif,attique,épique,dorien,contraction</span><span class="lemme"><a target="_blank" href="../../lemme/μεταβαίνω.html">μεταβαίνω</a></span></div><div class="int"><span class="el">δὲ</span><span class="info">particule</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">καὶ</span><span class="info">conjonction</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/καί4.html">καί4</a></span></div><div class="int"><span class="el">ἐπὶ</span><span class="info">préposition</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ἐπί2.html">ἐπί2</a></span></div><div class="int"><span class="el">ἑτέραν</span><span class="info">adjectif</span><span class="subinfo">singulier,féminin,accusatif,attique,dorien,éolien</span><span class="lemme"><a target="_blank" href="../../lemme/ἕτερος.html">ἕτερος</a></span></div><div class="int"><span class="el">γνῶσιν</span><span class="info">nom</span><span class="subinfo">singulier,féminin,accusatif</span><span class="lemme"><a target="_blank" href="../../lemme/γνῶσις.html">γνῶσις</a></span></div><div class="int"><span class="el">καὶ</span><span class="info">conjonction</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/καί4.html">καί4</a></span></div><div class="int"><span class="el">διδαχήν.</span><span class="info">nom</span><span class="subinfo">singulier,féminin,accusatif,attique,épique,ionien</span><span class="lemme"><a target="_blank" href="../../lemme/διδαχή.html">διδαχή</a></span></div><div class="int"><span class="el">Ὁδοὶ</span><span class="info">verbe</span><span class="subinfo">3e,singulier,présent,indicatif,actif,contraction</span><span class="lemme"><a target="_blank" href="../../lemme/ὁδόω.html">ὁδόω</a></span></div><div class="int"><span class="el">δύο</span><span class="info">numéral</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/δύο.html">δύο</a></span></div><div class="int"><span class="el">εἰσὶν</span><span class="info">verbe</span><span class="subinfo">3e,pluriel,présent,indicatif,actif,enclitique,nu_mobile</span><span class="lemme"><a target="_blank" href="../../lemme/εἰμί.html">εἰμί</a></span></div><div class="int"><span class="el">διδαχῆς</span><span class="info">nom</span><span class="subinfo">singulier,féminin,génitif,attique,épique,ionien</span><span class="lemme"><a target="_blank" href="../../lemme/διδαχή.html">διδαχή</a></span></div><div class="int"><span class="el">καὶ</span><span class="info">conjonction</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/καί4.html">καί4</a></span></div><div class="int"><span class="el">ἐξουσίας,</span><span class="info">nom</span><span class="subinfo">singulier,féminin,génitif,attique,dorien,éolien</span><span class="lemme"><a target="_blank" href="../../lemme/ἐξουσία.html">ἐξουσία</a></span></div><div class="int"><span class="el">ἥ</span><span class="info">adverbe</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ἧ.html">ἧ</a></span></div><div class="int"><span class="el">τε</span><span class="info">particule</span><span class="subinfo">enclitique,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/τε.html">τε</a></span></div><div class="int"><span class="el">τοῦ</span><span class="info">article</span><span class="subinfo">singulier,neutre,génitif,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">φωτὸς</span><span class="info">nom</span><span class="subinfo">singulier,neutre,génitif,attique,contraction,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/φάος.html">φάος</a></span></div><div class="int"><span class="el">καὶ</span><span class="info">conjonction</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/καί4.html">καί4</a></span></div><div class="int"><span class="el">ἡ</span><span class="info">adverbe</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ἧ.html">ἧ</a></span></div><div class="int"><span class="el">τοῦ</span><span class="info">article</span><span class="subinfo">singulier,neutre,génitif,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">σκότους.</span><span class="info">nom</span><span class="subinfo">singulier,neutre,génitif,attique,épique,dorien,contraction</span><span class="lemme"><a target="_blank" href="../../lemme/σκότος.html">σκότος</a></span></div><div class="int"><span class="el">διαφορὰ</span><span class="info">adjectif</span><span class="subinfo">pluriel,neutre,accusatif</span><span class="lemme"><a target="_blank" href="../../lemme/διάφορος.html">διάφορος</a></span></div><div class="int"><span class="el">δὲ</span><span class="info">particule</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">πολλὴ</span><span class="info">adjectif</span><span class="subinfo">singulier,féminin,nominatif,attique,épique,ionien</span><span class="lemme"><a target="_blank" href="../../lemme/πολύς.html">πολύς</a></span></div><div class="int"><span class="el">τῶν</span><span class="info">article</span><span class="subinfo">pluriel,masculin,génitif,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">δύο</span><span class="info">numéral</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/δύο.html">δύο</a></span></div><div class="int"><span class="el">ὁδῶν.</span><span class="info">verbe</span><span class="subinfo">présent,infinitif,actif,dorien</span><span class="lemme"><a target="_blank" href="../../lemme/ὁδόω.html">ὁδόω</a></span></div><div class="int"><span class="el">ἐφ̓</span><span class="info">préposition</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ἐπί2.html">ἐπί2</a></span></div><div class="int"><span class="el">ἧς</span><span class="info">nom</span><span class="subinfo">singulier,masculin,nominatif,dorien,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/εἷς.html">εἷς</a></span></div><div class="int"><span class="el">μὲν</span><span class="info">particule</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/μέν.html">μέν</a></span></div><div class="int"><span class="el">γάρ</span><span class="info">particule</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/γάρ.html">γάρ</a></span></div><div class="int"><span class="el">εἰσιν</span><span class="info">verbe</span><span class="subinfo">3e,pluriel,présent,indicatif,actif,enclitique,nu_mobile</span><span class="lemme"><a target="_blank" href="../../lemme/εἰμί.html">εἰμί</a></span></div><div class="int"><span class="el">τεταγμένοι</span><span class="info">participe</span><span class="subinfo">pluriel,parfait,moyen_passif,masculin,nominatif,redupl</span><span class="lemme"><a target="_blank" href="../../lemme/τάσσω.html">τάσσω</a></span></div><div class="int"><span class="el">φωταγωγοὶ</span><span class="info">adjectif</span><span class="subinfo">pluriel,masculin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/φωταγωγός.html">φωταγωγός</a></span></div><div class="int"><span class="el">ἄγγελοι</span><span class="info">nom</span><span class="subinfo">pluriel,féminin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/ἄγγελος.html">ἄγγελος</a></span></div><div class="int"><span class="el">τοῦ</span><span class="info">article</span><span class="subinfo">singulier,neutre,génitif,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">θεοῦ,</span><span class="info">nom</span><span class="subinfo">singulier,masculin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/θεός.html">θεός</a></span></div><div class="int"><span class="el">ἐφ̓</span><span class="info">préposition</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ἐπί2.html">ἐπί2</a></span></div><div class="int"><span class="el">ἦς</span><span class="info">verbe</span><span class="subinfo">3e,singulier,imparfait,indicatif,actif,dorien</span><span class="lemme"><a target="_blank" href="../../lemme/εἰμί.html">εἰμί</a></span></div><div class="int"><span class="el">δὲ</span><span class="info">particule</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">ἄγγελοι</span><span class="info">nom</span><span class="subinfo">pluriel,féminin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/ἄγγελος.html">ἄγγελος</a></span></div><div class="int"><span class="el">τοῦ</span><span class="info">article</span><span class="subinfo">singulier,neutre,génitif,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">σατανᾶ.</span><span class="info">nom</span><span class="subinfo">singulier,masculin,accusatif</span><span class="lemme"><a target="_blank" href="../../lemme/Σατάν.html">Σατάν</a></span></div></td></tr>
+<tr id="ba18_1" style="display: none;"><td class="td1">BARNABAS_ANGEL</td><td class="td2">80</td><td class="td3"><div class="int"><span class="el">Μεταβῶμεν</span><span class="info">verbe</span><span class="subinfo">1e,pluriel,aoriste,subjonctif,actif</span><span class="lemme"><a target="_blank" href="../../lemme/μεταβαίνω.html">μεταβαίνω</a></span></div><div class="int"><span class="el">δὲ</span><span class="info">adverbe</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">καὶ</span><span class="info">adverbe</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">ἐπὶ</span><span class="info">préposition</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/ἐπί.html">ἐπί</a></span></div><div class="int"><span class="el">ἑτέραν</span><span class="info">adjectif</span><span class="subinfo">singulier,féminin,accusatif</span><span class="lemme"><a target="_blank" href="../../lemme/ἕτερος.html">ἕτερος</a></span></div><div class="int"><span class="el">γνῶσιν</span><span class="info">nom</span><span class="subinfo">pluriel,aoriste,subjonctif,actif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">καὶ</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">διδαχήν</span><span class="info">nom</span><span class="subinfo">singulier,féminin,accusatif</span><span class="lemme"><a target="_blank" href="../../lemme/διδαχή.html">διδαχή</a></span></div><div class="int"><span class="el">Ὁδοὶ</span><span class="info">nom</span><span class="subinfo">pluriel,féminin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">δύο</span><span class="info">adjectif</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/δύο.html">δύο</a></span></div><div class="int"><span class="el">εἰσὶν</span><span class="info">verbe</span><span class="subinfo">3e,pluriel,présent,indicatif,actif</span><span class="lemme"><a target="_blank" href="../../lemme/εἰμί.html">εἰμί</a></span></div><div class="int"><span class="el">διδαχῆς</span><span class="info">nom</span><span class="subinfo">singulier,féminin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/διδαχή.html">διδαχή</a></span></div><div class="int"><span class="el">καὶ</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">ἐξουσίας</span><span class="info">nom</span><span class="subinfo">singulier,féminin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/ἐξουσία.html">ἐξουσία</a></span></div><div class="int"><span class="el">ἥ</span><span class="info">article</span><span class="subinfo">singulier,féminin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">τε</span><span class="info">adverbe</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/τε.html">τε</a></span></div><div class="int"><span class="el">τοῦ</span><span class="info">article</span><span class="subinfo">singulier,masculin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">φωτὸς</span><span class="info">nom</span><span class="subinfo">singulier,masculin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">καὶ</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">ἡ</span><span class="info">article</span><span class="subinfo">singulier,féminin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">τοῦ</span><span class="info">article</span><span class="subinfo">singulier,masculin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">σκότους</span><span class="info">nom</span><span class="subinfo">pluriel,masculin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">διαφορὰ</span><span class="info">nom</span><span class="subinfo">singulier,féminin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/διαφορά.html">διαφορά</a></span></div><div class="int"><span class="el">δὲ</span><span class="info">adverbe</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">πολλὴ</span><span class="info">adjectif</span><span class="subinfo">singulier,féminin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/πολύς.html">πολύς</a></span></div><div class="int"><span class="el">τῶν</span><span class="info">article</span><span class="subinfo">pluriel,féminin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">δύο</span><span class="info">adjectif</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/δύο.html">δύο</a></span></div><div class="int"><span class="el">ὁδῶν</span><span class="info">nom</span><span class="subinfo">pluriel,féminin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">ἐφ’</span><span class="info">préposition</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">ἧς</span><span class="info">pronom</span><span class="subinfo">singulier,féminin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">μὲν</span><span class="info">adverbe</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/μέν.html">μέν</a></span></div><div class="int"><span class="el">γάρ</span><span class="info">adverbe</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/γάρ.html">γάρ</a></span></div><div class="int"><span class="el">εἰσιν</span><span class="info">verbe</span><span class="subinfo">3e,pluriel,présent,indicatif,actif</span><span class="lemme"><a target="_blank" href="../../lemme/εἰμί.html">εἰμί</a></span></div><div class="int"><span class="el">τεταγμένοι</span><span class="info">verbe</span><span class="subinfo">pluriel,parfait,participe,moyen-passif,masculin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/τάσσω.html">τάσσω</a></span></div><div class="int"><span class="el">φωταγωγοὶ</span><span class="info">nom</span><span class="subinfo">pluriel,masculin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/φωταγωγός.html">φωταγωγός</a></span></div><div class="int"><span class="el">ἄγγελοι</span><span class="info">nom</span><span class="subinfo">pluriel,masculin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/ἄγγελος.html">ἄγγελος</a></span></div><div class="int"><span class="el">τοῦ</span><span class="info">article</span><span class="subinfo">singulier,masculin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">θεοῦ</span><span class="info">nom</span><span class="subinfo">singulier,masculin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/θεός.html">θεός</a></span></div><div class="int"><span class="el">ἐφ’</span><span class="info">préposition</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">ἧς</span><span class="info">pronom</span><span class="subinfo">singulier,féminin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">δὲ</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">ἄγγελοι</span><span class="info">nom</span><span class="subinfo">pluriel,masculin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/ἄγγελος.html">ἄγγελος</a></span></div><div class="int"><span class="el">τοῦ</span><span class="info">article</span><span class="subinfo">singulier,masculin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">σατανᾶ</span><span class="info">nom</span><span class="subinfo">singulier,masculin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div></td></tr><tr><td nowrap class="prigent" onclick="eimiv=1;view('129');">PRIGENT</a></td><td>1971</td><td>Il suffit sur ce sujet. Venons-en à un autre genre de connaissance et d'enseignement. Il y a deux voies (qui relèvent chacune) d'un enseignement et d'une autorité : La voie de la lumière et celle des ténébres. Grande est la différence entre ces deux voies. En effet, à l'une sont préposés les anges de Dieu qui donnent la lumière, à l'autre les anges de Satan.</td></tr><tr><td nowrap>HIPPOLYTE</td><td>1907</td><td>Passons maintenant à une autre sorte de connaissance et de doctrine. Il existe deux voies d’enseignement et d’action : celle de la lumière et celle des ténèbres ; mais il y a une grande différence entre elles. À l’une sont préposés les anges de Dieu conducteurs de lumière, à l’autre les anges de Satan.</td></tr><tr><td nowrap>CATHO</td><td>2000</td><td>Passons encore à une autre sorte de connaissance et de doctrine. Il y a deux voies, répondant à deux sortes de doctrine et d'autorité: la voie de la lumière et celle des ténèbres. Elles sont bien éloignées l'une de l'autre ! A l'une sont préposés les anges de Dieu, qui conduisent vers la lumière; à l'autre, les anges de Satan.</td></tr><tr><td nowrap>LIGHTFOOT_EN</td><td>2022</td><td>But let us pass on to another lesson and teaching. There are two ways of teaching and of power, the one of light and the other of darkness; and there is a great difference between the two ways. For on the one are stationed the light giving angels of God, on the other the angels of Satan.</td></tr></tbody></table>
+<br><br><div id="V2"></div><a href="#banniere"><b>BARNABAS 18 2</b></a> 
+<button onclick="montrer('18_2')">montrer</button>
+<button onclick="cacher('18_2')">cacher</button>
+<span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span>
+<table cellspacing="0"><tbody>
+
+<tr><td class="td1">BARNABAS_ND</td><td class="td2">80</td><td class="td3"><div class="int"><span class="el">καὶ</span><span class="fr">et</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">ὁ</span><span class="fr">le</span><span class="info">article</span><span class="subinfo">nominatif,singulier,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">μέν</span><span class="fr">certes</span><span class="info">particule</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/μέν.html">μέν</a></span></div><div class="int"><span class="el">ἐστιν</span><span class="fr">est</span><span class="info">verbe</span><span class="subinfo">présent,actif,indicatif,3e,singulier</span><span class="lemme"><a target="_blank" href="../../lemme/εἶναι.html">εἶναι</a></span></div><div class="int"><span class="el">κύριος</span><span class="fr">Maître</span><span class="info">nom</span><span class="subinfo">nominatif,masculin,singulier</span><span class="lemme"><a target="_blank" href="../../lemme/κύριος.html">κύριος</a></span></div><div class="int"><span class="el">ἀπὸ</span><span class="fr">au loin</span><span class="info">préposition</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/ἀπό.html">ἀπό</a></span></div><div class="int"><span class="el">αἰώνων</span><span class="fr">de ères</span><span class="info">nom</span><span class="subinfo">génitif,pluriel,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/αἰών.html">αἰών</a></span></div><div class="int"><span class="el">καὶ</span><span class="fr">et</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">εἰς</span><span class="fr">envers</span><span class="info">préposition</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/εἰς.html">εἰς</a></span></div><div class="int"><span class="el">τοὺς</span><span class="fr">les</span><span class="info">article</span><span class="subinfo">défini,accusatif,pluriel,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">αἰῶνας,</span><span class="fr">ères,</span><span class="info">nom</span><span class="subinfo">accusatif,pluriel,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/αἰών.html">αἰών</a></span></div><div class="int"><span class="el">ὁ</span><span class="fr">le</span><span class="info">article</span><span class="subinfo">nominatif,singulier,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">δὲ</span><span class="fr">cependant</span><span class="info">postpositif</span><span class="subinfo">conjonction</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">ἄρχων</span><span class="fr">chef</span><span class="info">nom</span><span class="subinfo">nominatif,singulier,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/ἄρχων.html">ἄρχων</a></span></div><div class="int"><span class="el">καιροῦ</span><span class="fr">de moment</span><span class="info">nom</span><span class="subinfo">génitif,singulier,masculin</span><span class="lemme"><a target="_blank" href="../../lemme/καιρός.html">καιρός</a></span></div><div class="int"><span class="el">τοῦ</span><span class="fr">de le</span><span class="info">article</span><span class="subinfo">défini,génitif,singulier,masculin/neutre</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">νῦν</span><span class="fr">maintenant</span><span class="info">adverbe</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/νῦν.html">νῦν</a></span></div><div class="int"><span class="el">τῆς</span><span class="fr">de la</span><span class="info">article</span><span class="subinfo">défini,génitif,singulier,féminin</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">ἀνομίας.</span><span class="fr">de illégalité.</span><span class="info">nom</span><span class="subinfo">génitif,féminin,singulier</span><span class="lemme"><a target="_blank" href="../../lemme/ἀνομία.html">ἀνομία</a></span></div></td></tr><tr><td class="td1" nowrap><button onclick="addtrs('trs_28_18_2');this.style.background='#00eb00'">NOUVELLE_DISPOSITION</button></td><td class="td2">80</td><td class="td3"><textarea id="trs_28_18_2" class="trs" style="">et le certes est Maître au loin de ères et envers les ères, le cependant chef de moment de le maintenant de la de illégalité.</textarea></td></tr>
+<tr id="bgd18_2" style="display: visible;"><td class="td1">BARNABAS_GREEKDOC</td><td class="td2">80</td><td class="td3"><div class="int"><span class="el">καὶ</span><span class="fr">and</span><span class="subinfo">-also,-even,-then,-next</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/kai.html#kai">kai</a></span></div><div class="int"><span class="el">ὁ</span><span class="fr">the</span><span class="subinfo">-oh</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/o.html#o(">o(</a></span></div><div class="int"><span class="el">μέν</span><span class="fr">indeed</span><span class="subinfo">-on-the-other-hand</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/men.html#men">men</a></span></div><div class="int"><span class="el">ἐστιν</span><span class="fr">to-be</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/es.html#estin">estin</a></span></div><div class="int"><span class="el">κύριος</span><span class="fr">lord</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/ku.html#kurios">kurios</a></span></div><div class="int"><span class="el">ἀπὸ</span><span class="fr">from</span><span class="subinfo">-away-from</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/apo.html#apo">apo</a></span></div><div class="int"><span class="el">αἰώνων</span><span class="fr">age</span><span class="subinfo">-eternity</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/aiw.html#aiwnwn">aiwnwn</a></span></div><div class="int"><span class="el">καὶ</span><span class="fr">and</span><span class="subinfo">-also,-even,-then,-next</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/kai.html#kai">kai</a></span></div><div class="int"><span class="el">εἰς</span><span class="fr">into</span><span class="subinfo">-unto,-for</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/eis.html#ei)s">ei)s</a></span></div><div class="int"><span class="el">τοὺς</span><span class="fr">the</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/to.html#tous">tous</a></span></div><div class="int"><span class="el">αἰῶνας,</span><span class="fr">age</span><span class="subinfo">-eternity</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/aiw.html#aiwnas">aiwnas</a></span></div><div class="int"><span class="el">ὁ</span><span class="fr">the</span><span class="subinfo">-oh</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/o.html#o(">o(</a></span></div><div class="int"><span class="el">δὲ</span><span class="fr">but</span><span class="subinfo">-and,-however</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/de.html#de">de</a></span></div><div class="int"><span class="el">ἄρχων</span><span class="fr">ruler</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/arc.html#arcwn">arcwn</a></span></div><div class="int"><span class="el">καιροῦ</span><span class="fr">always</span><span class="subinfo">-opportune</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/kai.html#kairou">kairou</a></span></div><div class="int"><span class="el">τοῦ</span><span class="fr">the</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/to.html#tou">tou</a></span></div><div class="int"><span class="el">νῦν</span><span class="fr">now</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/nu.html#nun">nun</a></span></div><div class="int"><span class="el">τῆς</span><span class="fr">the</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/th.html#ths">ths</a></span></div><div class="int"><span class="el">ἀνομίας.</span><span class="fr">illegality</span><span class="subinfo">-iniquity,-lawlessness</span><span class="lemme"><a target="_blank" href="http://www.greekdoc.com/bible/lexicon/ano.html#anomias">anomias</a></span></div></td></tr>
+<tr id="bp18_2" style="display: none;"><td class="td1">BARNABAS_PERSEUS</td><td class="td2">80</td><td class="td3"><div class="int"><span class="el">καὶ</span><span class="info">conjonction</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/καί4.html">καί4</a></span></div><div class="int"><span class="el">ὁ</span><span class="info">article</span><span class="subinfo">singulier,masculin,nominatif,proclitique,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">μέν</span><span class="info">particule</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/μέν.html">μέν</a></span></div><div class="int"><span class="el">ἐστιν</span><span class="info">verbe</span><span class="subinfo">3e,singulier,présent,indicatif,actif,enclitique,nu_mobile</span><span class="lemme"><a target="_blank" href="../../lemme/εἰμί.html">εἰμί</a></span></div><div class="int"><span class="el">κύριος</span><span class="info">nom</span><span class="subinfo">singulier,masculin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/κύριος.html">κύριος</a></span></div><div class="int"><span class="el">ἀπὸ</span><span class="info">préposition</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ἀπό.html">ἀπό</a></span></div><div class="int"><span class="el">αἰώνων</span><span class="info">nom</span><span class="subinfo">pluriel,masculin,génitif,poétique</span><span class="lemme"><a target="_blank" href="../../lemme/αἰών.html">αἰών</a></span></div><div class="int"><span class="el">καὶ</span><span class="info">conjonction</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/καί4.html">καί4</a></span></div><div class="int"><span class="el">εἰς</span><span class="info">préposition</span><span class="subinfo">proclitique,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/εἰς.html">εἰς</a></span></div><div class="int"><span class="el">τοὺς</span><span class="info">article</span><span class="subinfo">pluriel,masculin,accusatif,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">αἰῶνας,</span><span class="info">nom</span><span class="subinfo">pluriel,masculin,accusatif,poétique</span><span class="lemme"><a target="_blank" href="../../lemme/αἰών.html">αἰών</a></span></div><div class="int"><span class="el">ὁ</span><span class="info">article</span><span class="subinfo">singulier,masculin,nominatif,proclitique,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">δὲ</span><span class="info">particule</span><span class="subinfo">indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">ἄρχων</span><span class="info">nom</span><span class="subinfo">pluriel,féminin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/ἀρχή.html">ἀρχή</a></span></div><div class="int"><span class="el">καιροῦ</span><span class="info">verbe</span><span class="subinfo">3e,singulier,imparfait,indicatif,actif,homérique,ionien,contraction,non_augmenté</span><span class="lemme"><a target="_blank" href="../../lemme/καιρόω.html">καιρόω</a></span></div><div class="int"><span class="el">τοῦ</span><span class="info">article</span><span class="subinfo">singulier,neutre,génitif,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">νῦν</span><span class="info">adverbe</span><span class="subinfo">enclitique,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/νῦν2.html">νῦν2</a></span></div><div class="int"><span class="el">τῆς</span><span class="info">article</span><span class="subinfo">singulier,féminin,génitif,attique,épique,ionien,indéclinable</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">ἀνομίας.</span><span class="info">nom</span><span class="subinfo">singulier,féminin,génitif,attique,dorien,éolien</span><span class="lemme"><a target="_blank" href="../../lemme/ἀνομία.html">ἀνομία</a></span></div></td></tr>
+<tr id="ba18_2" style="display: none;"><td class="td1">BARNABAS_ANGEL</td><td class="td2">80</td><td class="td3"><div class="int"><span class="el">καὶ</span><span class="info">adverbe</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">ὁ</span><span class="info">article</span><span class="subinfo">singulier,masculin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">μέν</span><span class="info">adverbe</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/μέν.html">μέν</a></span></div><div class="int"><span class="el">ἐστιν</span><span class="info">verbe</span><span class="subinfo">3e,singulier,présent,indicatif,actif</span><span class="lemme"><a target="_blank" href="../../lemme/εἰμί.html">εἰμί</a></span></div><div class="int"><span class="el">κύριος</span><span class="info">nom</span><span class="subinfo">singulier,masculin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/κύριος.html">κύριος</a></span></div><div class="int"><span class="el">ἀπὸ</span><span class="info">préposition</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/ἀπό.html">ἀπό</a></span></div><div class="int"><span class="el">αἰώνων</span><span class="info">nom</span><span class="subinfo">pluriel,masculin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/αἰών.html">αἰών</a></span></div><div class="int"><span class="el">καὶ</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/καί.html">καί</a></span></div><div class="int"><span class="el">εἰς</span><span class="info">préposition</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/εἰς.html">εἰς</a></span></div><div class="int"><span class="el">τοὺς</span><span class="info">article</span><span class="subinfo">pluriel,masculin,accusatif</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">αἰῶνας</span><span class="info">nom</span><span class="subinfo">pluriel,masculin,accusatif</span><span class="lemme"><a target="_blank" href="../../lemme/αἰών.html">αἰών</a></span></div><div class="int"><span class="el">ὁ</span><span class="info">article</span><span class="subinfo">singulier,masculin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">δὲ</span><span class="info">conjonction</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/δέ.html">δέ</a></span></div><div class="int"><span class="el">ἄρχων</span><span class="info">nom</span><span class="subinfo">singulier,masculin,nominatif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">καιροῦ</span><span class="info">nom</span><span class="subinfo">singulier,masculin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">τοῦ</span><span class="info">article</span><span class="subinfo">singulier,masculin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/-.html">-</a></span></div><div class="int"><span class="el">νῦν</span><span class="info">adverbe</span><span class="subinfo">-</span><span class="lemme"><a target="_blank" href="../../lemme/νῦν.html">νῦν</a></span></div><div class="int"><span class="el">τῆς</span><span class="info">article</span><span class="subinfo">singulier,féminin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/ὁ.html">ὁ</a></span></div><div class="int"><span class="el">ἀνομίας</span><span class="info">nom</span><span class="subinfo">singulier,féminin,génitif</span><span class="lemme"><a target="_blank" href="../../lemme/ἀνομία.html">ἀνομία</a></span></div></td></tr><tr><td nowrap class="prigent" onclick="eimiv=2;view('129');">PRIGENT</a></td><td>1971</td><td>L'un est Seigneur d'éternité en éternité, l'autre est prince de la présente époque d'iniquité.</td></tr><tr><td nowrap>HIPPOLYTE</td><td>1907</td><td>Dieu est le Seigneur depuis l’origine des siècles et pour les siècles, Satan le prince du temps présent favorable à l’impiété.</td></tr><tr><td nowrap>CATHO</td><td>2000</td><td>Or, Dieu est le Seigneur depuis l'origine et pour les siècles, et Satan est le prince du temps présent, le temps de l'iniquité.</td></tr><tr><td nowrap>LIGHTFOOT_EN</td><td>2022</td><td>And the one is the Lord from all eternity and unto all eternity, whereas the other is Lord of the season of iniquity that now is.</td></tr>
+</tbody></table>
+<br>
+</div></div>
+
+<div id="right">
+	<div id="inright">
+		<img onload="loader();" id="box" src=""></div>
+	</div>
+</div>
+
+</body>
+<script>
+
+
+
+function montrer(id)
+{
+	document.getElementById('bgd'+id).style='visible';
+	document.getElementById('ba'+id).style='visible';
+	document.getElementById('bp'+id).style='visible';
+}
+
+
+function cacher(id)
+{
+	document.getElementById('bgd'+id).style='display:none';
+	document.getElementById('ba'+id).style='display:none';
+	document.getElementById('bp'+id).style='display:none';
+}
+
+
+
+show	= 0;
+current	= ""
+
+			
+element = document.getElementById('inright')
+elempic = document.getElementById('box')
+
+nbmakelc	= 0;
+lcarray 	= {}
+
+
+
+
+
+		
+
+
+function view(link)
+{
+
+	//clean
+	document.getElementById('box').src = ""
+
+	
+	//get info
+	classn = "prigent"
+
+
+	if (classn != current)
+	{
+
+		
+		
+		if (current != "")
+		{
+			//CLOSE
+			for (xnc = 0 ; xnc != document.getElementsByClassName(current).length ; xnc++ )
+			{
+				document.getElementsByClassName(current)[xnc].innerHTML = current.toUpperCase()
+			}
+		}
+		
+		//OPEN
+		for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+		{
+			document.getElementsByClassName(classn)[xnc].innerHTML = " [  ECHAP "+classn.toUpperCase()+" ]"
+		}
+		
+		document.getElementById('left').style.width = "50%";
+		document.getElementById('right').style.width = "50%";
+		
+		document.getElementById('box').src = '../pic/'+link+".jpg";
+		
+		current = classn;
+		show = 1;
+		
+		//resize
+		//pvx = document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth
+		//panzoom(element).zoomAbs(0,0,0.1);
+		
+	}
+	
+	else if (classn == current)
+	{
+		
+		//CLOSE
+		for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+		{
+			document.getElementsByClassName(classn)[xnc].innerHTML = classn.toUpperCase()
+		}
+		
+		document.getElementById('left').style.width = "100%";
+		document.getElementById('right').style.width = "0%";
+		show = 0;
+		
+		current = "";
+	
+	}
+
+	window.location = (""+window.location).replace(/#.*?$/,'')+"#V"+eimiv;
+}
+
+
+
+
+instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: 0.2,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+
+
+
+function loader()
+{
+	
+	pvx=document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth;
+	instance.dispose()
+	
+	instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: pvx,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+	
+
+	
+}
+
+
+
+
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	
+	e = e || window.event;
+
+	console.log(e.keyCode)
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+	
+	
+	if (elempic.getAttribute("src") != "")
+	{
+
+		pic = elempic.src.match(/([0-9]+).jpg/)[1]
+
+		
+		
+		if (e.keyCode == '27') {
+			
+			view('prigent')
+			
+			
+			
+		}
+		
+		
+		//else if (e.keyCode == '38') {document.getElementById('left').scrollTop = 0;}
+		
+		//else if (e.keyCode == '40') {document.getElementById('left').scrollTop = 999999;}
+
+		
+		else if (e.keyCode == '37') {
+			
+			if (pic > 0)
+			{
+					pic--
+					
+					elempic.src = "../pic/"+pic+".jpg";
+				
+			}
+		}
+		
+		else if (e.keyCode == '39') 
+		{
+			
+				if (pic < 153)
+					pic++
+				
+				elempic.src = "../pic/"+pic+".jpg";
+
+			
+		}
+		
+
+
+	}
+
+}
+
+
+
+
+
+
+</script>
+
+
+</html>
+
